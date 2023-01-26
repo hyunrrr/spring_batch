@@ -12,6 +12,10 @@ import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * https://jojoldu.tistory.com/328?category=902551
+ */
+
 @Slf4j
 @Configuration
 public class CustomExitStatusJobConfiguration {
