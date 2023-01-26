@@ -1,4 +1,4 @@
-package com.naver.batch.job;
+package com.naver.batch.ch4.job;
 
 import java.util.Random;
 import lombok.extern.slf4j.Slf4j;
