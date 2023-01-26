@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: batch
+
+---
+spring:
+  config:
+    activate:
+      on-profile: batch
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/batch
+    username: batch
+    password: batch
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      names: ${job.name:NONE}
+
+---
+spring:
+  config:
+    activate:
+      on-profile: application
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/application
+    username: application
+    password: application
+    driver-class-name: com.mysql.cj.jdbc.Driver
