@@ -47,6 +47,22 @@ public class Pay {
         this.txDateTime = txDateTime;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public Long getAmount() {
+        return amount;
+    }
+
+    public String getTxName() {
+        return txName;
+    }
+
+    public LocalDateTime getTxDateTime() {
+        return txDateTime;
+    }
+
     @Override
     public String toString() {
         return "Pay{" +
